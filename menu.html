@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Menu — Cafe Made In 2020</title>
+<meta name="description" content="Cafe Made In 2020 — Ambernath's cosiest corner for handcrafted food, specialty coffee and great company. Open 24 hours.">
+<meta name="theme-color" content="#C47B2B">
+<meta property="og:title" content="Cafe Made In 2020">
+<meta property="og:description" content="Ambernath's cosiest corner for handcrafted food, specialty coffee and great company.">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#C47B2B",
+        "secondary": "#D4654A",
+        "cream": "#FAF3E0",
+        "charcoal": "#1E1E1E",
+        "deep-brown": "#2B1F14",
+        "muted": "#6B5B45",
+        "brand-border": "#E8D9C0",
+        "brand-footer": "#0F0A05",
+        "brand-beige": "#D9C9A8",
+        "brand-dark": "#1E1E1E",
+        "brand-cream": "#FAF3E0"
+      },
+      fontFamily: {
+        "playfair": ["Playfair Display", "serif"],
+        "dmsans": ["DM Sans", "sans-serif"]
+      }
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#FAF3E0] font-dmsans text-[#1E1E1E]">
+<!-- BEGIN: Navigation -->
+
+<div class="skeleton-wrapper fixed top-0 w-full z-[999] h-[68px] bg-[#1E1E1E] flex items-center justify-between px-10">
+  <div class="skeleton w-48 h-6 rounded"></div>
+  <div class="flex gap-8">
+    <div class="skeleton w-12 h-4 rounded"></div>
+    <div class="skeleton w-12 h-4 rounded"></div>
+    <div class="skeleton w-16 h-4 rounded"></div>
+    <div class="skeleton w-14 h-4 rounded"></div>
+  </div>
+  <div class="skeleton w-32 h-10 rounded-lg"></div>
+</div>
+<header class="site-nav real-content real-content-flex">
+<a class="nav-logo" href="index.html">Cafe Made In 2020</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link active" href="menu.html">Menu</a>
+<a class="nav-link" href="about.html">About Us</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</div>
+<a class="btn-primary hidden md:inline-block" href="contact.html">Reserve a Table</a>
+<button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+  <span class="w-6 h-0.5 bg-[#FAF3E0] block"></span>
+  <span class="w-6 h-0.5 bg-[#FAF3E0] block"></span>
+  <span class="w-6 h-0.5 bg-[#FAF3E0] block"></span>
+</button>
+<div id="mobile-menu" class="hidden md:hidden absolute top-[68px] left-0 w-full bg-[#1E1E1E] border-t border-white/10 flex flex-col p-6 gap-4 z-50">
+  <a class="nav-link" href="index.html">Home</a>
+  <a class="nav-link" href="menu.html">Menu</a>
+  <a class="nav-link" href="about.html">About Us</a>
+  <a class="nav-link" href="contact.html">Contact</a>
+  <a class="btn-primary text-center" href="contact.html">Reserve a Table</a>
+</div>
+</header>
+
+<!-- END: Navigation -->
+<!-- BEGIN: Header Banner -->
+<div class="skeleton-wrapper w-full h-[320px] bg-[#2B1F14] flex flex-col items-center justify-center gap-4">
+  <div class="skeleton skeleton-pill w-36 mx-auto"></div>
+  <div class="skeleton w-48 h-12 rounded mx-auto"></div>
+  <div class="skeleton w-64 h-4 rounded mx-auto"></div>
+</div>
+<header class="relative h-[320px] w-full flex items-center justify-center overflow-hidden real-content real-content-flex" data-purpose="hero-banner">
+<!-- Dark overlay over cafe image -->
+<div class="absolute inset-0 bg-[#0F0A05]/65 z-10"></div>
+<img alt="Cafe Background" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGu3pZxkWAb12luh26QLOaM0_nudu_ttDbY2vYzXL-4X6ISka6klenxzQnnfQwSQ2MRAxF4mH3x21alz_2xD0u0CwMnjrUd7-z9mrRgjzSfbCREZvm1kJK2U8SXIL78Pfnvyf4m-WQI68oeImauI0qNPsTytu4snaKoHcfDKwyCd_SH6m66lqf-kVz-85mt5pcViajMmUpWRO39Cl0O_EKJnEkHJg6lCj9_WEJwtaPgZ3e5XI7zhKOsNtkhgilQ8Wl9Fd0tOWajUWy"/>
+<div class="relative z-20 text-center px-4">
+<span class="hero-badge">Browse &amp; Discover</span>
+<h1 class="font-playfair text-5xl md:text-6xl text-white mb-2">Our Menu</h1>
+<p class="text-cream/80 text-lg italic">Crafted with love. Served with soul.</p>
+</div>
+</header>
+<!-- END: Header Banner -->
+<!-- BEGIN: Sticky Category Tabs -->
+<div class="skeleton-wrapper w-full bg-[#1E1E1E] py-4 px-10 flex gap-3 overflow-hidden">
+  <div class="skeleton skeleton-pill w-16"></div>
+  <div class="skeleton skeleton-pill w-12"></div>
+  <div class="skeleton skeleton-pill w-24"></div>
+  <div class="skeleton skeleton-pill w-16"></div>
+  <div class="skeleton skeleton-pill w-20"></div>
+  <div class="skeleton skeleton-pill w-14"></div>
+  <div class="skeleton skeleton-pill w-24"></div>
+  <div class="skeleton skeleton-pill w-16"></div>
+  <div class="skeleton skeleton-pill w-20"></div>
+</div>
+<section class="sticky-tabs bg-charcoal shadow-lg overflow-hidden real-content" data-purpose="category-navigation">
+<div class="max-w-7xl mx-auto px-4 py-3 flex items-center overflow-x-auto no-scrollbar gap-3 whitespace-nowrap"><a class="px-5 py-2 bg-amber text-white rounded-full text-sm font-medium" href="#prawns">Prawns</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#rolls">Rolls</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#italian">Italian Feast</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#burgers">Relish Your Buns</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#healthy">Healthy Ones</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#never-have">Never I Have Ever</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#crazy-potatoes">Crazy Potatoes</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#quickies">Quickies</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#sandwiches">Between The Bread</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#sizzlers">Mexican Tamasha</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#desserts">Chocolate Chaos</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#mocktails">Mocktails</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#milkshakes">Milky Treat</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#pancakes">Pancakes</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#coffee">Coffee Menu</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#lattes">Lattes</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#frappuccino">Frappuccino</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#iced-coffee">Iced Coffee</a><a class="px-5 py-2 bg-mutedBrown/30 text-cream/70 hover:bg-mutedBrown/50 rounded-full text-sm font-medium transition" href="#pizza">Love Triangle</a></div>
+</section>
+<!-- END: Sticky Category Tabs -->
+<!-- BEGIN: Menu Items Sections -->
+<div class="skeleton-wrapper bg-[#FAF3E0] px-10 py-8">
+  <div class="skeleton w-36 h-7 rounded mb-6"></div>
+  <div class="grid grid-cols-2 gap-4">
+    <div class="bg-white border border-[#E8D9C0] rounded-xl p-5 flex justify-between items-start">
+      <div class="flex flex-col gap-2 w-4/5">
+        <div class="skeleton w-32 h-4 rounded"></div>
+        <div class="skeleton w-full h-3 rounded"></div>
+        <div class="skeleton w-3/4 h-3 rounded"></div>
+      </div>
+      <div class="skeleton w-16 h-16 rounded-lg flex-shrink-0"></div>
+    </div>
+    <div class="bg-white border border-[#E8D9C0] rounded-xl p-5 flex justify-between items-start">
+      <div class="flex flex-col gap-2 w-4/5">
+        <div class="skeleton w-28 h-4 rounded"></div>
+        <div class="skeleton w-full h-3 rounded"></div>
+        <div class="skeleton w-2/3 h-3 rounded"></div>
+      </div>
+      <div class="skeleton w-16 h-16 rounded-lg flex-shrink-0"></div>
+    </div>
+  </div>
+</div>
+<div class="skeleton-wrapper bg-[#FAF3E0] px-10 py-8 mt-16">
+  <div class="skeleton w-36 h-7 rounded mb-6"></div>
+  <div class="grid grid-cols-2 gap-4">
+    <div class="bg-white border border-[#E8D9C0] rounded-xl p-5 flex justify-between items-start">
+      <div class="flex flex-col gap-2 w-4/5">
+        <div class="skeleton w-32 h-4 rounded"></div>
+        <div class="skeleton w-full h-3 rounded"></div>
+        <div class="skeleton w-3/4 h-3 rounded"></div>
+      </div>
+      <div class="skeleton w-16 h-16 rounded-lg flex-shrink-0"></div>
+    </div>
+    <div class="bg-white border border-[#E8D9C0] rounded-xl p-5 flex justify-between items-start">
+      <div class="flex flex-col gap-2 w-4/5">
+        <div class="skeleton w-28 h-4 rounded"></div>
+        <div class="skeleton w-full h-3 rounded"></div>
+        <div class="skeleton w-2/3 h-3 rounded"></div>
+      </div>
+      <div class="skeleton w-16 h-16 rounded-lg flex-shrink-0"></div>
+    </div>
+  </div>
+</div>
+<div class="skeleton-wrapper bg-[#FAF3E0] px-10 py-8 mt-16">
+  <div class="skeleton w-36 h-7 rounded mb-6"></div>
+  <div class="grid grid-cols-2 gap-4">
+    <div class="bg-white border border-[#E8D9C0] rounded-xl p-5 flex justify-between items-start">
+      <div class="flex flex-col gap-2 w-4/5">
+        <div class="skeleton w-32 h-4 rounded"></div>
+        <div class="skeleton w-full h-3 rounded"></div>
+        <div class="skeleton w-3/4 h-3 rounded"></div>
+      </div>
+      <div class="skeleton w-16 h-16 rounded-lg flex-shrink-0"></div>
+    </div>
+    <div class="bg-white border border-[#E8D9C0] rounded-xl p-5 flex justify-between items-start">
+      <div class="flex flex-col gap-2 w-4/5">
+        <div class="skeleton w-28 h-4 rounded"></div>
+        <div class="skeleton w-full h-3 rounded"></div>
+        <div class="skeleton w-2/3 h-3 rounded"></div>
+      </div>
+      <div class="skeleton w-16 h-16 rounded-lg flex-shrink-0"></div>
+    </div>
+  </div>
+</div>
+<div class="skeleton-wrapper bg-[#FAF3E0] px-10 py-8 mt-16">
+  <div class="skeleton w-36 h-7 rounded mb-6"></div>
+  <div class="grid grid-cols-2 gap-4">
+    <div class="bg-white border border-[#E8D9C0] rounded-xl p-5 flex justify-between items-start">
+      <div class="flex flex-col gap-2 w-4/5">
+        <div class="skeleton w-32 h-4 rounded"></div>
+        <div class="skeleton w-full h-3 rounded"></div>
+        <div class="skeleton w-3/4 h-3 rounded"></div>
+      </div>
+      <div class="skeleton w-16 h-16 rounded-lg flex-shrink-0"></div>
+    </div>
+    <div class="bg-white border border-[#E8D9C0] rounded-xl p-5 flex justify-between items-start">
+      <div class="flex flex-col gap-2 w-4/5">
+        <div class="skeleton w-28 h-4 rounded"></div>
+        <div class="skeleton w-full h-3 rounded"></div>
+        <div class="skeleton w-2/3 h-3 rounded"></div>
+      </div>
+      <div class="skeleton w-16 h-16 rounded-lg flex-shrink-0"></div>
+    </div>
+  </div>
+</div>
+<main class="max-w-7xl mx-auto px-4 py-12 space-y-16 real-content" data-purpose="menu-content"><!-- PRAWNS -->
+<section class="scroll-mt-24" id="prawns">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Prawns</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4">
+<div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Prawns Tempura</h3></div>
+</div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4">
+<div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Crispy Prawns Fingers</h3></div>
+</div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4">
+<div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Juicy Prawns Burger</h3></div>
+</div>
+</div>
+</section>
+<!-- ROLLS -->
+<section class="scroll-mt-24" id="rolls">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Rolls</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Coleslaw Chicken Roll</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Spicy Chicken Roll</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Coleslaw Paneer Roll</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Spicy Paneer Roll</h3></div></div>
+</div>
+</section>
+<!-- ITALIAN FEAST -->
+<section class="scroll-mt-24" id="italian">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Italian Feast</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Penne Alfredo Pasta</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Arrabbiata Pasta</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Creamy Mushroom Pasta</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Pink Sauce Pasta</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Spaghetti With Meatballs</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Aglio E Olio</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Mac &amp; Cheese Pasta</h3></div></div>
+</div>
+</section>
+<!-- RELISH YOUR BUNS -->
+<section class="scroll-mt-24" id="burgers">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Relish Your Buns (Burgers)</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Crispy Paneer Burger</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Grilled Paneer Burger</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Crispy Veggie Burger</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Grilled Chicken Burger</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Cheesy Burger</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Crispy Chicken Burger</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Egg And Grilled Chicken Burger</h3></div></div>
+</div>
+</section>
+<!-- HEALTHY ONES -->
+<section class="scroll-mt-24" id="healthy">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Healthy Ones</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Lemon Pepper Steak</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Spicy Honey Glaze Steak</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Hot &amp; Spicy Steak</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Fried Kajun Spice</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Sticky Mushroom Spaghetti</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Caesar Salad</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Grilled Chicken Bowl</h3></div></div>
+</div>
+</section>
+<!-- CHEF'S PICK BANNER -->
+<section class="bg-charcoal rounded-custom p-8 md:p-12 relative overflow-hidden">
+<div class="relative z-10 text-center max-w-2xl mx-auto">
+<div class="flex items-center justify-center gap-2 mb-4">
+<svg class="w-5 h-5 text-amber" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<span class="text-amber font-bold tracking-widest text-xs uppercase">Chef's Picks</span>
+<svg class="w-5 h-5 text-amber" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+</div>
+<h2 class="font-playfair text-4xl text-white mb-4 italic">"Never I Have Ever"</h2>
+<p class="text-cream/70 text-lg">Unique experiments from our head chef that became instant favorites. Bold, unexpected, and truly 2020.</p>
+</div>
+</section>
+<!-- NEVER I HAVE EVER -->
+<section class="scroll-mt-24" id="never-have">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Frachos...!</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Tizziee...!</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Sleepy Chicken...!</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Italian Twist...!</h3></div></div>
+</div>
+</section>
+<!-- CRAZY POTATOES -->
+<section class="scroll-mt-24" id="crazy-potatoes">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Crazy Potatoes</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">French Fries</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Peri-Peri Fries</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Lemon Pepper Fries</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Saucy Fries</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Chicken Fries</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Cheese Bomb Fries</h3></div></div>
+</div>
+</section>
+<!-- QUICKIES -->
+<section class="scroll-mt-24" id="quickies">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Quickies</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Garlic Bread</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Veggie Stuffed Garlic Bread</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Nachos With Cheese</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Saucy Loaded Nachos</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Crispy Chicken Strips</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">BBQ Chicken Strips</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Tacos</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Stuffed Buttons</h3></div></div>
+</div>
+</section>
+<!-- BETWEEN THE BREAD -->
+<section class="scroll-mt-24" id="sandwiches">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Between The Bread (Sandwiches)</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Veggie Club Sandwich</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Grilled Paneer Club Sandwich</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Egg &amp; Cheese Sandwich</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Grilled Chicken Club Sandwich</h3></div></div>
+</div>
+</section>
+<!-- MEXICAN TAMASHA -->
+<section class="scroll-mt-24" id="sizzlers">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Mexican Tamasha (Sizzlers)</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Sizzler In Brown Sauce</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Sizzler In Creamy Mushroom Sauce</h3></div></div>
+</div>
+</section>
+<!-- CHOCOLATE CHAOS -->
+<section class="scroll-mt-24" id="desserts">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Chocolate Chaos (Desserts)</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Fudge Brownies</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Nutella Brownies</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Messy Messy</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Blueberry Cheesecake</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Nutella Cheesecake</h3></div></div>
+</div>
+</section>
+<!-- MOCKTAILS -->
+<section class="scroll-mt-24" id="mocktails">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Mocktails</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Virgin Mojito</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Lemon Ice Tea</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Peach Ice Tea</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Spicy Cranberry</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Fresh Lime Soda</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Blue Lagoon</h3></div></div>
+</div>
+</section>
+<!-- MILKY TREAT -->
+<section class="scroll-mt-24" id="milkshakes">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Milky Treat (Milkshakes)</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Heavy Chocolate Shake</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Caffe-Oreo Shake</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Nutella Shake</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Kitkat Shake</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Blueberry Shake</h3></div></div>
+</div>
+</section>
+<!-- PANCAKES -->
+<section class="scroll-mt-24" id="pancakes">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Pancakes</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Pancakes With Honey</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Pancakes With Maple Syrup</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Nutella Pancakes</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Blueberry Pancakes</h3></div></div>
+</div>
+</section>
+<!-- COFFEE MENU -->
+<section class="scroll-mt-24" id="coffee">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Coffee Menu</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Espresso</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Black Coffee</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Café Americano</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Flat White</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Cappuccino</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Caffe Mocha</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Dark Chocolate Mocha</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Macchiato</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Caramel Macchiato</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Affogato</h3></div></div>
+</div>
+</section>
+<!-- LATTES -->
+<section class="scroll-mt-24" id="lattes">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Lattes</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Caffe Latte</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Cinnamon Latte</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Hazelnut Latte</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Vanilla Latte</h3></div></div>
+</div>
+</section>
+<!-- FRAPPUCCINO -->
+<section class="scroll-mt-24" id="frappuccino">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Frappuccino</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Coffee Frappuccino</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Caffè Vanilla Frappuccino</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Caramel Frappuccino</h3></div></div>
+</div>
+</section>
+<!-- ICED COFFEE -->
+<section class="scroll-mt-24" id="iced-coffee">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Iced Coffee</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Iced Coffee</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Iced Coffee With Milk</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Cold Brew Coffee</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Vanilla Sweet Cream Iced Coffee</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Iced Caffè Americano</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Iced Latte</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Iced Cinnamon Latte</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Iced Caffè Mocha</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Iced Dark Chocolate Mocha</h3></div></div>
+</div>
+</section>
+<!-- LOVE TRIANGLE -->
+<section class="scroll-mt-24" id="pizza">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-1.5 h-8 bg-amber"></div>
+<h2 class="font-playfair text-3xl font-bold">Love Triangle (Pizza — 8 inch)</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Margherita</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Farmhouse</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Exotic</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Paneer / Chicken Tikka</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Mushroom</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Hot &amp; Spicy Paneer / Chicken</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">BBQ Paneer / Chicken</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Peri Peri Paneer / Chicken</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Roast Chicken</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Pepperoni</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Half And Half</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-veg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Corn N' Onion</h3></div></div>
+<div class="cafe-card menu-card p-4 flex justify-between items-center gap-4"><div><div class="indicator-box mb-1"><div class="dot-nonveg"></div></div><h3 class="text-[16px] font-semibold text-[#1E1E1E] font-playfair">Chicken Kheema</h3></div></div>
+</div>
+</section></main>
+<!-- END: Menu Items Sections -->
+<!-- BEGIN: Bottom CTA -->
+<section class="bg-terracotta py-16 px-6 text-center" data-purpose="footer-cta">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-playfair text-3xl md:text-4xl text-white mb-8">Can't decide? Come in and let us surprise you.</h2>
+<a class="btn-terracotta inline-block mx-auto" href="#">Get Directions</a>
+</div>
+</section>
+<!-- END: Bottom CTA -->
+<!-- BEGIN: Main Footer -->
+
+<footer class="bg-[#0F0A05] pt-20 pb-10 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 pb-16">
+<div>
+<h3 class="text-[#C47B2B] font-playfair text-2xl font-bold mb-6">Cafe Made In 2020</h3>
+<p class="text-[#6B5B45] leading-relaxed mb-6">
+    A culmination of passion and culinary craft, serving Ambernath since 2020. Experience local hospitality with global flavors.
+</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-[#6B5B45] flex items-center justify-center text-[#6B5B45] hover:text-[#C47B2B] hover:border-[#C47B2B] transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white text-lg font-bold mb-6 font-playfair">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="menu.html">Our Menu</a></li>
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="contact.html">Order Online</a></li>
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="contact.html">Reserve a Table</a></li>
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="about.html">Gallery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white text-lg font-bold mb-6 font-playfair">Visit Us</h4>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#C47B2B] mt-1">location_on</span>
+<p class="text-[#6B5B45]">Shop No. 1, First Floor, Uma Nivas, Plot No. 554, Kher Section, Ambernath, Maharashtra 421501</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#C47B2B]">schedule</span>
+<p class="text-[#6B5B45]">Open 24 Hours · Every Day</p>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-white/5 pt-10 mt-10 text-center">
+<p class="text-[#6B5B45] text-sm">© 2024 Cafe Made In 2020. All rights reserved. Designed for excellence.</p>
+</div>
+</footer>
+
+<!-- END: Main Footer -->
+<script src="script.js"></script>
+</body></html>

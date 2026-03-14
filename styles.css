@@ -1,0 +1,259 @@
+/* ===== ROOT & VARIABLES ===== */
+:root {
+  --color-amber: #C47B2B;
+  --color-terracotta: #D4654A;
+  --color-cream: #FAF3E0;
+  --color-charcoal: #1E1E1E;
+  --color-deep-brown: #2B1F14;
+  --color-muted: #6B5B45;
+  --color-border: #E8D9C0;
+  --color-footer: #0F0A05;
+  --color-beige: #D9C9A8;
+}
+
+/* ===== RESET & BODY ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'DM Sans', sans-serif; background-color: #FAF3E0; color: #1E1E1E; }
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, .font-playfair { font-family: 'Playfair Display', serif; }
+.section-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C47B2B;
+  display: block;
+  margin-bottom: 12px;
+}
+.section-underline {
+  width: 80px;
+  height: 3px;
+  background: #C47B2B;
+  border-radius: 2px;
+  margin: 12px auto 0;
+}
+
+/* ===== NAVBAR ===== */
+header.site-nav {
+  background-color: #1E1E1E;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  height: 68px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header.site-nav .nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #C47B2B;
+  text-decoration: none;
+}
+header.site-nav .nav-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #FAF3E0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+header.site-nav .nav-link:hover,
+header.site-nav .nav-link.active { color: #C47B2B; }
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background: #C47B2B;
+  color: #FAF3E0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+.btn-primary:hover { background: #A8661F; }
+.btn-outline {
+  background: transparent;
+  color: #C47B2B;
+  border: 2px solid #C47B2B;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+.btn-outline:hover { background: #C47B2B; color: #FAF3E0; }
+.btn-terracotta {
+  background: #D4654A;
+  color: #FAF3E0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+.btn-terracotta:hover { background: #B8543C; }
+
+/* ===== CARDS ===== */
+.cafe-card {
+  background: #FFFFFF;
+  border: 1px solid #E8D9C0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.07);
+  overflow: hidden;
+}
+
+/* ===== HERO BADGE ===== */
+.hero-badge {
+  background: rgba(196,123,43,0.25);
+  border: 1px solid #C47B2B;
+  color: #F0D9A8;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  padding: 6px 16px;
+  border-radius: 100px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* ===== INSTA GRADIENT BUTTON ===== */
+.insta-gradient {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+/* ===== MENU PAGE ===== */
+/* Hide scrollbar for category tabs but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Sticky Tab Positioning */
+.sticky-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.menu-card {
+  border: 1px solid #E8D9C0;
+  transition: transform 0.2s ease;
+}
+.menu-card:hover {
+  transform: translateY(-2px);
+}
+
+.dot-veg { background-color: #4CAF50; border-radius: 50%; width: 8px; height: 8px; }
+.dot-nonveg { background-color: #F44336; border-radius: 50%; width: 8px; height: 8px; }
+.indicator-box { border: 1px solid #ccc; padding: 2px; display: inline-block; line-height: 0; }
+
+/* ===== SKELETON LOADING ===== */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #e8d9c0 25%, #f5ede0 50%, #e8d9c0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.8s infinite linear;
+  border-radius: 8px;
+}
+
+.skeleton-text {
+  background: linear-gradient(90deg, #e8d9c0 25%, #f5ede0 50%, #e8d9c0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.8s infinite linear;
+  border-radius: 4px;
+  height: 16px;
+  margin-bottom: 8px;
+}
+
+.skeleton-title {
+  background: linear-gradient(90deg, #e8d9c0 25%, #f5ede0 50%, #e8d9c0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.8s infinite linear;
+  border-radius: 4px;
+  height: 32px;
+  margin-bottom: 12px;
+}
+
+.skeleton-image {
+  background: linear-gradient(90deg, #e8d9c0 25%, #f5ede0 50%, #e8d9c0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.8s infinite linear;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.skeleton-circle {
+  background: linear-gradient(90deg, #e8d9c0 25%, #f5ede0 50%, #e8d9c0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.8s infinite linear;
+  border-radius: 50%;
+}
+
+.skeleton-pill {
+  background: linear-gradient(90deg, #e8d9c0 25%, #f5ede0 50%, #e8d9c0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.8s infinite linear;
+  border-radius: 100px;
+  height: 28px;
+}
+
+.skeleton-btn {
+  background: linear-gradient(90deg, #e8d9c0 25%, #f5ede0 50%, #e8d9c0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.8s infinite linear;
+  border-radius: 10px;
+  height: 48px;
+}
+
+/* Skeleton wrapper — shown while loading, hidden after */
+.skeleton-wrapper {
+  display: block;
+}
+
+.real-content {
+  display: none;
+}
+
+/* When page is loaded, flip them */
+body.loaded .skeleton-wrapper {
+  display: none !important;
+}
+
+body.loaded .real-content {
+  display: block !important;
+}
+
+body.loaded .real-content-flex {
+  display: flex !important;
+}
+
+body.loaded .real-content-grid {
+  display: grid !important;
+}

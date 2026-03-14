@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Made In 2020 — Ambernath</title>
+<meta name="description" content="Cafe Made In 2020 — Ambernath's cosiest corner for handcrafted food, specialty coffee and great company. Open 24 hours.">
+<meta name="theme-color" content="#C47B2B">
+<meta property="og:title" content="Cafe Made In 2020">
+<meta property="og:description" content="Ambernath's cosiest corner for handcrafted food, specialty coffee and great company.">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#C47B2B",
+        "secondary": "#D4654A",
+        "cream": "#FAF3E0",
+        "charcoal": "#1E1E1E",
+        "deep-brown": "#2B1F14",
+        "muted": "#6B5B45",
+        "brand-border": "#E8D9C0",
+        "brand-footer": "#0F0A05",
+        "brand-beige": "#D9C9A8",
+        "brand-dark": "#1E1E1E",
+        "brand-cream": "#FAF3E0"
+      },
+      fontFamily: {
+        "playfair": ["Playfair Display", "serif"],
+        "dmsans": ["DM Sans", "sans-serif"]
+      }
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#FAF3E0] text-[#1E1E1E] selection:bg-primary/30">
+<!-- SECTION 1: STICKY NAV -->
+
+<div class="skeleton-wrapper fixed top-0 w-full z-[999] h-[68px] bg-[#1E1E1E] flex items-center justify-between px-10">
+  <div class="skeleton w-48 h-6 rounded"></div>
+  <div class="flex gap-8">
+    <div class="skeleton w-12 h-4 rounded"></div>
+    <div class="skeleton w-12 h-4 rounded"></div>
+    <div class="skeleton w-16 h-4 rounded"></div>
+    <div class="skeleton w-14 h-4 rounded"></div>
+  </div>
+  <div class="skeleton w-32 h-10 rounded-lg"></div>
+</div>
+<header class="site-nav real-content real-content-flex">
+<a class="nav-logo" href="index.html">Cafe Made In 2020</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link active" href="index.html">Home</a>
+<a class="nav-link" href="menu.html">Menu</a>
+<a class="nav-link" href="about.html">About Us</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</div>
+<a class="btn-primary hidden md:inline-block" href="contact.html">Reserve a Table</a>
+<button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+  <span class="w-6 h-0.5 bg-[#FAF3E0] block"></span>
+  <span class="w-6 h-0.5 bg-[#FAF3E0] block"></span>
+  <span class="w-6 h-0.5 bg-[#FAF3E0] block"></span>
+</button>
+<div id="mobile-menu" class="hidden md:hidden absolute top-[68px] left-0 w-full bg-[#1E1E1E] border-t border-white/10 flex flex-col p-6 gap-4 z-50">
+  <a class="nav-link" href="index.html">Home</a>
+  <a class="nav-link" href="menu.html">Menu</a>
+  <a class="nav-link" href="about.html">About Us</a>
+  <a class="nav-link" href="contact.html">Contact</a>
+  <a class="btn-primary text-center" href="contact.html">Reserve a Table</a>
+</div>
+</header>
+
+<!-- SECTION 2: HERO -->
+<div class="skeleton-wrapper w-full h-screen bg-[#2B1F14] flex flex-col items-center justify-center gap-6 px-4">
+  <div class="skeleton skeleton-pill w-48 mx-auto"></div>
+  <div class="skeleton skeleton-title w-[520px] max-w-[90%] h-16 mx-auto"></div>
+  <div class="skeleton skeleton-title w-[380px] max-w-[80%] h-16 mx-auto"></div>
+  <div class="skeleton skeleton-text w-[400px] max-w-[85%] mx-auto"></div>
+  <div class="skeleton skeleton-text w-[320px] max-w-[75%] mx-auto"></div>
+  <div class="flex gap-4 mt-4">
+    <div class="skeleton skeleton-btn w-40"></div>
+    <div class="skeleton skeleton-btn w-36"></div>
+  </div>
+</div>
+<section class="relative h-[calc(100vh-68px)] w-full overflow-hidden real-content">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat" data-alt="Rustic cozy cafe interior with warm lighting and wooden furniture" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIpWZY76KrSQaq680yL3GcHkMfv8vIPS4tEszRTTLge1pf8B_S_z6Z7Rk6JZArtmy88JQQ1d0YTeoU4WEKUJxBe4clzkxZrV0qN3uQDl7RNw6mLDBXPjmoIIOAzFeeUZRvtRvOWYX6B_SzvKaren7LpWmyGRmtjIv9-Jyj1Clr7GgsbtVvSIitKtDnbbhmDZeTqO_9pbZEgObzwS3k4NhyuYriusbo_TsRcnlIxsL_4VCSHkw7rvzJIRWpacvbS4TZLgy5s8C-Cnjv');"></div>
+<div class="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
+<div class="mb-6 inline-flex items-center rounded-full bg-primary/20 border border-primary/30 px-4 py-1.5 backdrop-blur-md">
+<span class="hero-badge">Est. 2020 · Ambernath, Maharashtra</span>
+</div>
+<h1 class="max-w-4xl text-white text-5xl md:text-7xl font-black leading-tight mb-6 font-playfair">
+                Where Every Bite Tells a Story
+            </h1>
+<p class="max-w-2xl text-cream/90 text-lg md:text-xl font-normal mb-10 leading-relaxed">
+                Ambernath's cosiest corner for handcrafted brews and artisanal delights. 
+                Your daily retreat since 2020.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="btn-primary">
+                    Explore Our Menu
+                </button>
+<button class="btn-outline">
+                    Find Us on Maps
+                </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- SECTION 3: HIGHLIGHT STRIP -->
+<div class="skeleton-wrapper w-full bg-[#1E1E1E] py-8 flex justify-center gap-16 px-10">
+  <div class="flex flex-col items-center gap-2">
+    <div class="skeleton skeleton-circle w-8 h-8"></div>
+    <div class="skeleton w-32 h-4 rounded"></div>
+    <div class="skeleton w-24 h-3 rounded"></div>
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <div class="skeleton skeleton-circle w-8 h-8"></div>
+    <div class="skeleton w-36 h-4 rounded"></div>
+    <div class="skeleton w-24 h-3 rounded"></div>
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <div class="skeleton skeleton-circle w-8 h-8"></div>
+    <div class="skeleton w-32 h-4 rounded"></div>
+    <div class="skeleton w-20 h-3 rounded"></div>
+  </div>
+</div>
+<section class="bg-[#2B1F14] py-10 px-6 real-content">
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
+<div class="flex items-center justify-center gap-4 py-4 md:py-0">
+<span class="material-symbols-outlined text-primary text-4xl">restaurant_menu</span>
+<div class="text-left">
+<p class="text-white text-xl font-bold">100+ Menu Items</p>
+<p class="text-[#6B5B45] text-sm">Diverse global flavors</p>
+</div>
+</div>
+<div class="flex items-center justify-center gap-4 py-4 md:py-0">
+<span class="material-symbols-outlined text-primary text-4xl">coffee_maker</span>
+<div class="text-left">
+<p class="text-white text-xl font-bold">Specialty Coffee Bar</p>
+<p class="text-[#6B5B45] text-sm">Premium roasted beans</p>
+</div>
+</div>
+<div class="flex items-center justify-center gap-4 py-4 md:py-0">
+<span class="material-symbols-outlined text-primary text-4xl">stars</span>
+<div class="text-left">
+<p class="text-white text-xl font-bold">4.7 Rated on Google</p>
+<p class="text-[#6B5B45] text-sm">Loved by the community</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: FAN FAVOURITES -->
+<div class="skeleton-wrapper w-full bg-[#FAF3E0] py-20 px-10">
+  <div class="skeleton w-32 h-3 rounded mx-auto mb-3"></div>
+  <div class="skeleton w-48 h-8 rounded mx-auto mb-3"></div>
+  <div class="skeleton w-20 h-1 rounded mx-auto mb-12"></div>
+  <div class="grid grid-cols-4 gap-6">
+    <div class="rounded-xl overflow-hidden border border-[#E8D9C0]">
+      <div class="skeleton skeleton-image h-48"></div>
+      <div class="bg-white p-5">
+        <div class="skeleton w-28 h-4 rounded mb-2"></div>
+        <div class="skeleton w-full h-3 rounded mb-1"></div>
+        <div class="skeleton w-3/4 h-3 rounded"></div>
+      </div>
+    </div>
+    <div class="rounded-xl overflow-hidden border border-[#E8D9C0]">
+      <div class="skeleton skeleton-image h-48"></div>
+      <div class="bg-white p-5">
+        <div class="skeleton w-24 h-4 rounded mb-2"></div>
+        <div class="skeleton w-full h-3 rounded mb-1"></div>
+        <div class="skeleton w-2/3 h-3 rounded"></div>
+      </div>
+    </div>
+    <div class="rounded-xl overflow-hidden border border-[#E8D9C0]">
+      <div class="skeleton skeleton-image h-48"></div>
+      <div class="bg-white p-5">
+        <div class="skeleton w-32 h-4 rounded mb-2"></div>
+        <div class="skeleton w-full h-3 rounded mb-1"></div>
+        <div class="skeleton w-3/4 h-3 rounded"></div>
+      </div>
+    </div>
+    <div class="rounded-xl overflow-hidden border border-[#E8D9C0]">
+      <div class="skeleton skeleton-image h-48"></div>
+      <div class="bg-white p-5">
+        <div class="skeleton w-28 h-4 rounded mb-2"></div>
+        <div class="skeleton w-full h-3 rounded mb-1"></div>
+        <div class="skeleton w-1/2 h-3 rounded"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="py-20 px-6 max-w-7xl mx-auto real-content">
+<div class="text-center mb-16">
+<h2 class="text-[#1E1E1E] text-4xl md:text-5xl font-bold mb-4 font-playfair">Fan Favourites</h2>
+<div class="section-underline"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="cafe-card group transition-all duration-300 hover:-translate-y-1 block max-w-sm">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute top-4 left-4 z-10 bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded">VEG</div>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Plate of loaded potato fries with cheese and toppings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqt25D27mBvjCZXC12duwTMEs2SzSiEaY-juez-SiBeXANNeaIvnc-15OLWIRWcPwAjn7XwGQU-9W4lc3wnPbcZAtFDOOP5Gft4JTFWMTtNVNiTzsVzbmNgdl4M3hqXd0kfBqGY0vN4w5jvTlnUiJUbp8Go2AMW6cmybUIY9J6TE4VPPZlLy1i0y9S3ilKcKm4k9Hwl8PyU77EF3YpUXSNwYVvUnmsZ1ZkoIpzBy4L09jGHYsWY6pHT-nDgLtUOFETS-ZDaqvg9_hL"/>
+</div>
+<div class="p-6">
+<h3 class="text-[#1E1E1E] text-2xl font-bold mb-2 font-playfair">Frachos...!</h3>
+<p class="text-[#6B5B45] text-sm leading-relaxed">Our signature twist on French Fries and Nachos.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="cafe-card group transition-all duration-300 hover:-translate-y-1 block max-w-sm">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute top-4 left-4 z-10 bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded">VEG</div>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Italian thin crust pizza with fresh basil and mozzarella" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMssk-rWyJIl-WbvxTb1P2J4aaqBhu7TJQO9qpNBhuDXFEwJFABQ5j8PA5DNKgKUho4CXI-Wfhww04Cr7Gf7HiK_30GrcXy-yQQbX1lKWBeDJ8jWxg4mk9eufG8uQWbE7X9PJ0UZcGDmH3CKqCR9a-FkxlnwlyzWqSWV3XHvHLEO8uw_t5w-72i90vrjvDkrq2jGbgai5651iPGdrC8RBQt1NKYwu6p3YRrO6AQdQ-7VkuG0briPtZR_utDN8mi8IlgUQEe8iwg3sU"/>
+</div>
+<div class="p-6">
+<h3 class="text-[#1E1E1E] text-2xl font-bold mb-2 font-playfair">Tizziee...!</h3>
+<p class="text-[#6B5B45] text-sm leading-relaxed">The ultimate fusion pizza experience in Ambernath.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="cafe-card group transition-all duration-300 hover:-translate-y-1 block max-w-sm">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute top-4 left-4 z-10 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded">NON-VEG</div>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Crispy golden fried chicken wings with honey glaze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe7Av0qGMtq4Nua3UdVaExOPgWgYpSsDse7Ii4qqgBRaD6om8253LGWO065ELk-a6mlTf_pDLN4x_npEoLsQgocHLv0Rjswfy9jcJxEBHvo864lJrzcwB5ZT8sCYisr5b0iI2F6N5liuMTXT_Dy1i9V2xvfLY9q5_kIkcDsapoS2xXP1-oajqrXSonWVTRKVgLzjkPyT-xG-98jzC7umw6X8NV3jo71jkKT6k4x3g7ENjhiv4Ue-e1kBfFURu4AZhsBTZc2WDzHGen"/>
+</div>
+<div class="p-6">
+<h3 class="text-[#1E1E1E] text-2xl font-bold mb-2 font-playfair">Sleepy Chicken</h3>
+<p class="text-[#6B5B45] text-sm leading-relaxed">Tender, marinated, and slow-cooked for perfection.</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="cafe-card group transition-all duration-300 hover:-translate-y-1 block max-w-sm">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute top-4 left-4 z-10 bg-blue-500 text-white text-[10px] font-bold px-2 py-1 rounded">COFFEE</div>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Iced caramel macchiato coffee with milk swirls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFbNpS8d7eus0NEo6ZYnoiMrIdfWn7c3FA7Lhz3bzpQS_JI7AEvrfjVtcs2VIIwgOgWkNGUTP_NcWxv5s3wMH8OozRD0ixxoIttELs5DC88iASqBmi5TeY1MZ4wtLIQ9fxLCtbG-H04maNLdOqGo1uK2OqBBeQqZGyAMML12YHS1I__XCUs9AAcgI2-T1BBKyvkSJngDGqPJCn47WGU08z4IjESLnt0_nOjkyqVZsVI_61DRJmEeLGLXGaH68RkgmlEr4OPBHzJzGW"/>
+</div>
+<div class="p-6">
+<h3 class="text-[#1E1E1E] text-2xl font-bold mb-2 font-playfair">Caramel Macchiato</h3>
+<p class="text-[#6B5B45] text-sm leading-relaxed">Perfectly layered espresso with sweet caramel drizzle.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: VIBE GALLERY -->
+<div class="skeleton-wrapper w-full bg-[#2B1F14] py-20 px-10">
+  <div class="grid grid-cols-2 gap-12">
+    <div class="flex flex-col gap-4">
+      <div class="skeleton w-24 h-3 rounded"></div>
+      <div class="skeleton w-64 h-10 rounded"></div>
+      <div class="skeleton w-56 h-10 rounded"></div>
+      <div class="skeleton w-full h-4 rounded mt-2"></div>
+      <div class="skeleton w-5/6 h-4 rounded"></div>
+      <div class="skeleton w-4/5 h-4 rounded"></div>
+      <div class="skeleton w-32 h-10 rounded-lg mt-4"></div>
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <div class="skeleton skeleton-image aspect-square rounded-xl"></div>
+      <div class="skeleton skeleton-image aspect-square rounded-xl"></div>
+      <div class="skeleton skeleton-image aspect-square rounded-xl"></div>
+      <div class="skeleton skeleton-image aspect-square rounded-xl"></div>
+    </div>
+  </div>
+</div>
+<section class="bg-[#2B1F14] py-24 px-6 real-content">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-cream text-4xl md:text-5xl font-bold leading-tight mb-6 font-playfair">More than a cafe — it's a feeling.</h2>
+<p class="text-cream/70 text-lg mb-8 leading-relaxed">
+                    Designed as a sanctuary for creators, friends, and families. Whether you're here for a quick espresso or a long dinner conversation, our space is built for memories.
+                </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-cream/90">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                        Aesthetic indoor seating
+                    </li>
+<li class="flex items-center gap-3 text-cream/90">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                        Free high-speed WiFi for work
+                    </li>
+<li class="flex items-center gap-3 text-cream/90">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                        Perfect venue for private events
+                    </li>
+</ul>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="h-64 rounded-xl overflow-hidden" data-alt="Close up of a barista pouring latte art" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBW-th18cof2n_73QlGLWSwnw4SwE_HCecyUKl8eKaHTPstrqlfh7OOkT7UXT1YjWfzkOyTuGx2HXWtLI3xSqZQ673ZSav-E843ckxNOZGkg5wyJwDrfv1bAQYRVzdXr5mRq-zj9mmhOe7FGz0pIQTlwYNRxMREvoibtlGw__PhsLzwG57rBOpugabbq0tgL4k90IngVtCZtNTsfMRW334Ia8J0-aUn9FB-edXIKHjUtSOF7tQbqepprnW7C54P3E8P12g1FiJsSNem'); background-size: cover;"></div>
+<div class="h-64 rounded-xl overflow-hidden mt-8" data-alt="Friends laughing together at a cafe table" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiUfxcGl2nX2f8zaXPe6V9FjftFGjHd3sbJAxYIThO6FOW1T7swfc47nqGZ2E0cYMG59wNr0oxR5lWfZzhPp4ywm-KMx8qa5cbQ19rRV9RQW8PHgXFL0-2_1Fl1BCjFTIOSIw4N_qzUGnQNeuIBji_b3IFz6SZaDPoa11XZsKIBKEVedwKt1waO_jABQrE02J48m0EDoXqvpW3iFAzAgb4uXz_QAdUsMg0myMNnPMkIQQ7N0MDXprNV3x_B7UL2iJWnJRUBAvOHcVa'); background-size: cover;"></div>
+<div class="h-64 rounded-xl overflow-hidden -mt-8" data-alt="Plate of gourmet pasta on a wooden table" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVl-vFXYNkPYgj7KHLmyYi3kUxCMZ4cVU3ipQVTMdSw9fJTBroTw8-xq6VUjhbasBxWYMxWhG__fl90_rQc3y-rPj8II8-lSxnZZFh7bJyPS9OaDCn-A8yyIFpMdXJDqUYdiHAPJ8f55uLrxKUrMnflR7ba67uek_d_J5e9G-1g_JYhIuV7zknRjq82MIMDi9fjklHK87m_mkwH4D3EGVqwH6zSTfOYLCuYpVsxEPGoK_-7rpmgOa_XdAY-SQS3K_tGe4R6ZmkaAZ9'); background-size: cover;"></div>
+<div class="h-64 rounded-xl overflow-hidden" data-alt="Cozy reading nook in the cafe corner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDV6Ao30XqrCQI85AcptnFlnec3EnU-i9VIErgHTi91TiD6dWLTXRlUSx2-mZ1rFFQ1VBcjny2YiHamjwJuEQiigDY1deP00jrFKscgzUI09eZ43_G9_soVuA6dONh4LNec6P9YWUzXTgu-ZUUi_e12duBCTF4MJf9RsKQQlBrxYzjP6KPE-QlZp1jK499xsOnY_-eIZUSw_LJUh-SuqcyTPImjJsQX3Q9s9gA0nH0Xn86bcKsTRPGIlU86vICygUUuDYxc-IFmSBn8'); background-size: cover;"></div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: GOOGLE REVIEWS STRIP -->
+<div class="skeleton-wrapper w-full bg-[#C47B2B] py-16 px-10">
+  <div class="skeleton w-40 h-3 rounded mx-auto mb-3 opacity-50"></div>
+  <div class="skeleton w-52 h-8 rounded mx-auto mb-12 opacity-50"></div>
+  <div class="grid grid-cols-3 gap-5">
+    <div class="rounded-xl p-6 border border-white/20 bg-white/10">
+      <div class="skeleton w-24 h-4 rounded mb-4 opacity-50"></div>
+      <div class="skeleton w-full h-3 rounded mb-2 opacity-50"></div>
+      <div class="skeleton w-5/6 h-3 rounded mb-2 opacity-50"></div>
+      <div class="skeleton w-4/5 h-3 rounded mb-4 opacity-50"></div>
+      <div class="skeleton w-28 h-3 rounded opacity-50"></div>
+    </div>
+    <div class="rounded-xl p-6 border border-white/20 bg-white/10">
+      <div class="skeleton w-24 h-4 rounded mb-4 opacity-50"></div>
+      <div class="skeleton w-full h-3 rounded mb-2 opacity-50"></div>
+      <div class="skeleton w-5/6 h-3 rounded mb-2 opacity-50"></div>
+      <div class="skeleton w-3/4 h-3 rounded mb-4 opacity-50"></div>
+      <div class="skeleton w-28 h-3 rounded opacity-50"></div>
+    </div>
+    <div class="rounded-xl p-6 border border-white/20 bg-white/10">
+      <div class="skeleton w-24 h-4 rounded mb-4 opacity-50"></div>
+      <div class="skeleton w-full h-3 rounded mb-2 opacity-50"></div>
+      <div class="skeleton w-5/6 h-3 rounded mb-2 opacity-50"></div>
+      <div class="skeleton w-2/3 h-3 rounded mb-4 opacity-50"></div>
+      <div class="skeleton w-28 h-3 rounded opacity-50"></div>
+    </div>
+  </div>
+</div>
+<section class="bg-primary py-16 px-6 overflow-hidden real-content">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-white text-3xl font-bold text-center mb-12 font-playfair">What Our Guests Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
+<div class="flex gap-1 text-cream mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-white text-lg italic mb-6">"Best Frachos in town! The ambiance is so chill and the staff is incredibly friendly."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-cream/20 border border-white/30 flex items-center justify-center text-white font-bold">R</div>
+<span class="text-white font-bold">— Google Reviewer</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
+<div class="flex gap-1 text-cream mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-white text-lg italic mb-6">"The specialty coffee is actual top-tier. Highly recommend the Caramel Macchiato."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-cream/20 border border-white/30 flex items-center justify-center text-white font-bold">P</div>
+<span class="text-white font-bold">— Google Reviewer</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
+<div class="flex gap-1 text-cream mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-white text-lg italic mb-6">"A hidden gem in Ambernath. Perfect for weekend brunches with the family."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-cream/20 border border-white/30 flex items-center justify-center text-white font-bold">A</div>
+<span class="text-white font-bold">— Google Reviewer</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FOOTER -->
+
+<footer class="bg-[#0F0A05] pt-20 pb-10 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 pb-16">
+<div>
+<h3 class="text-[#C47B2B] font-playfair text-2xl font-bold mb-6">Cafe Made In 2020</h3>
+<p class="text-[#6B5B45] leading-relaxed mb-6">
+    A culmination of passion and culinary craft, serving Ambernath since 2020. Experience local hospitality with global flavors.
+</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-[#6B5B45] flex items-center justify-center text-[#6B5B45] hover:text-[#C47B2B] hover:border-[#C47B2B] transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white text-lg font-bold mb-6 font-playfair">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="menu.html">Our Menu</a></li>
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="contact.html">Order Online</a></li>
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="contact.html">Reserve a Table</a></li>
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="about.html">Gallery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white text-lg font-bold mb-6 font-playfair">Visit Us</h4>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#C47B2B] mt-1">location_on</span>
+<p class="text-[#6B5B45]">Shop No. 1, First Floor, Uma Nivas, Plot No. 554, Kher Section, Ambernath, Maharashtra 421501</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#C47B2B]">schedule</span>
+<p class="text-[#6B5B45]">Open 24 Hours · Every Day</p>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-white/5 pt-10 mt-10 text-center">
+<p class="text-[#6B5B45] text-sm">© 2024 Cafe Made In 2020. All rights reserved. Designed for excellence.</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body></html>

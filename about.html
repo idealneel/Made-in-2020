@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Cafe Made In 2020</title>
+<meta name="description" content="Cafe Made In 2020 — Ambernath's cosiest corner for handcrafted food, specialty coffee and great company. Open 24 hours.">
+<meta name="theme-color" content="#C47B2B">
+<meta property="og:title" content="Cafe Made In 2020">
+<meta property="og:description" content="Ambernath's cosiest corner for handcrafted food, specialty coffee and great company.">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#C47B2B",
+        "secondary": "#D4654A",
+        "cream": "#FAF3E0",
+        "charcoal": "#1E1E1E",
+        "deep-brown": "#2B1F14",
+        "muted": "#6B5B45",
+        "brand-border": "#E8D9C0",
+        "brand-footer": "#0F0A05",
+        "brand-beige": "#D9C9A8",
+        "brand-dark": "#1E1E1E",
+        "brand-cream": "#FAF3E0"
+      },
+      fontFamily: {
+        "playfair": ["Playfair Display", "serif"],
+        "dmsans": ["DM Sans", "sans-serif"]
+      }
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#FAF3E0] text-[#1E1E1E]">
+<!-- Top Navigation -->
+
+<div class="skeleton-wrapper fixed top-0 w-full z-[999] h-[68px] bg-[#1E1E1E] flex items-center justify-between px-10">
+  <div class="skeleton w-48 h-6 rounded"></div>
+  <div class="flex gap-8">
+    <div class="skeleton w-12 h-4 rounded"></div>
+    <div class="skeleton w-12 h-4 rounded"></div>
+    <div class="skeleton w-16 h-4 rounded"></div>
+    <div class="skeleton w-14 h-4 rounded"></div>
+  </div>
+  <div class="skeleton w-32 h-10 rounded-lg"></div>
+</div>
+<header class="site-nav real-content real-content-flex">
+<a class="nav-logo" href="index.html">Cafe Made In 2020</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="menu.html">Menu</a>
+<a class="nav-link active" href="about.html">About Us</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</div>
+<a class="btn-primary hidden md:inline-block" href="contact.html">Reserve a Table</a>
+<button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+  <span class="w-6 h-0.5 bg-[#FAF3E0] block"></span>
+  <span class="w-6 h-0.5 bg-[#FAF3E0] block"></span>
+  <span class="w-6 h-0.5 bg-[#FAF3E0] block"></span>
+</button>
+<div id="mobile-menu" class="hidden md:hidden absolute top-[68px] left-0 w-full bg-[#1E1E1E] border-t border-white/10 flex flex-col p-6 gap-4 z-50">
+  <a class="nav-link" href="index.html">Home</a>
+  <a class="nav-link" href="menu.html">Menu</a>
+  <a class="nav-link" href="about.html">About Us</a>
+  <a class="nav-link" href="contact.html">Contact</a>
+  <a class="btn-primary text-center" href="contact.html">Reserve a Table</a>
+</div>
+</header>
+
+<!-- SECTION 1: HERO BANNER -->
+<div class="skeleton-wrapper w-full h-[380px] bg-[#2B1F14] flex flex-col items-center justify-center gap-4 mt-16">
+  <div class="skeleton skeleton-pill w-28 mx-auto"></div>
+  <div class="skeleton w-96 h-12 rounded mx-auto"></div>
+  <div class="skeleton w-72 h-4 rounded mx-auto"></div>
+</div>
+<section class="relative mt-16 h-[380px] flex items-center justify-center overflow-hidden real-content real-content-flex">
+<div class="absolute inset-0 bg-[#2B1F14]">
+<div class="absolute inset-0 bg-[#0F0A05]/65 z-10"></div>
+<img alt="Warm rustic cafe interior with wooden furniture and ambient lighting" class="w-full h-full object-cover" data-alt="Warm rustic cafe interior with wooden furniture and ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKuvM-HGA0wojtPfiLTX4FVw5qRH1Al_kUJRYJzEoVc8i7EQZxQ1neJV1AihsBPDprTkdaxq5K4xPEX_DSZb6LNr576GoRDRKLOUcGyb3aXF-4vH3Wta-AmwNGBxVMIc06F10wNaMTjo-rjeAafyqTQjjNwq0pm0LoCyZcTKgA2B6ui4s5YuV7xRj2d-_mrlgNeP3boiVmyzVx3clh0ZST4NwVk4o0tWIrSuI0mxFzZd_GK2sPbewIkmy8kIjGrczIJaf8Jl8DDtim"/>
+</div>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<span class="hero-badge">Our Journey</span>
+<h1 class="text-[#faf3e0] text-4xl md:text-[58px] font-playfair leading-tight mb-4">Born in 2020. Built on Passion.</h1>
+<p class="text-[#d9c9a8] font-body text-base md:text-[17px] max-w-xl mx-auto">A little cafe that became Ambernath's favourite place to be.</p>
+</div>
+</section>
+<!-- SECTION 2: OUR STORY -->
+<div class="skeleton-wrapper bg-[#FAF3E0] py-20 px-10">
+  <div class="grid grid-cols-2 gap-16 items-center">
+    <div class="skeleton skeleton-image h-[440px] rounded-xl"></div>
+    <div class="flex flex-col gap-4">
+      <div class="skeleton w-20 h-3 rounded"></div>
+      <div class="skeleton w-64 h-10 rounded"></div>
+      <div class="skeleton w-full h-4 rounded"></div>
+      <div class="skeleton w-5/6 h-4 rounded"></div>
+      <div class="skeleton w-4/5 h-4 rounded"></div>
+      <div class="skeleton w-full h-4 rounded mt-2"></div>
+      <div class="skeleton w-3/4 h-4 rounded"></div>
+      <div class="skeleton w-16 h-1 rounded mt-4"></div>
+      <div class="skeleton w-72 h-6 rounded"></div>
+    </div>
+  </div>
+</div>
+<section class="py-[90px] px-6 md:px-20 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center real-content real-content-grid">
+<div class="h-[440px] bg-cafe-border rounded-lg overflow-hidden shadow-lg">
+<img alt="Barista pouring latte art into a ceramic cup" class="w-full h-full object-cover" data-alt="Barista pouring latte art into a ceramic cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaTn2G0ztqn4sW1V9jTTGb4yijP-abl6wZ78O0yw8i5ouUtKvimwZ7SSXytwr3HnNZm-ABplruvotFKrbWvtI_8iEFppo9s14kjthtT30d8PFpJDE66PE4d1KPoNiAGU3HIaPbwtlkE36HgbU8sZm1xJiDdjleC5R1NsjO0hmjKibqmXDbX11cMl0rBG2FeejRoHmTbbKBFDIv-WuK-NlYsELbGNI3HaorPJa4e5LTuZATxs49DxkaPEBTpv9mbvbrnG_w2hlJL9NY"/>
+</div>
+<div class="flex flex-col gap-6">
+<span class="section-label">Our Story</span>
+<h2 class="text-4xl md:text-[40px] font-playfair text-[#1E1E1E] leading-tight">Where It All Started</h2>
+<div class="section-underline" style="margin: 12px 0 0;"></div>
+<div class="flex flex-col gap-4">
+<p class="text-[#6B5B45] font-body text-[15px] leading-relaxed">
+                    Starting a business in 2020 was a challenge few dared to take. For us, it was the culmination of a lifelong dream to bring authentic, high-quality coffee and a warm, neighborhood vibe to Ambernath.
+                </p>
+<p class="text-[#6B5B45] font-body text-[15px] leading-relaxed">
+                    What began as a small passion project has grown into a community hub where friendships are forged over steaming mugs of lattes and artisanal brunches.
+                </p>
+</div>
+<div class="mt-4 border-l-2 border-primary pl-6 py-2">
+<p class="font-playfair italic text-[22px] text-[#1E1E1E] leading-snug">
+                    "We don't just serve food — we serve memories."
+                </p>
+</div>
+</div>
+</section>
+<!-- SECTION 3: VALUES / PILLARS -->
+<div class="skeleton-wrapper bg-[#2B1F14] py-20 px-10">
+  <div class="skeleton w-36 h-3 rounded mx-auto mb-3 opacity-40"></div>
+  <div class="skeleton w-32 h-8 rounded mx-auto mb-12 opacity-40"></div>
+  <div class="grid grid-cols-3 gap-6">
+    <div class="rounded-xl p-8 border border-white/10 bg-white/5 flex flex-col items-center gap-3">
+      <div class="skeleton skeleton-circle w-12 h-12 opacity-40"></div>
+      <div class="skeleton w-32 h-5 rounded opacity-40"></div>
+      <div class="skeleton w-full h-3 rounded opacity-40"></div>
+      <div class="skeleton w-5/6 h-3 rounded opacity-40"></div>
+    </div>
+    <div class="rounded-xl p-8 border border-white/10 bg-white/5 flex flex-col items-center gap-3">
+      <div class="skeleton skeleton-circle w-12 h-12 opacity-40"></div>
+      <div class="skeleton w-28 h-5 rounded opacity-40"></div>
+      <div class="skeleton w-full h-3 rounded opacity-40"></div>
+      <div class="skeleton w-4/5 h-3 rounded opacity-40"></div>
+    </div>
+    <div class="rounded-xl p-8 border border-white/10 bg-white/5 flex flex-col items-center gap-3">
+      <div class="skeleton skeleton-circle w-12 h-12 opacity-40"></div>
+      <div class="skeleton w-36 h-5 rounded opacity-40"></div>
+      <div class="skeleton w-full h-3 rounded opacity-40"></div>
+      <div class="skeleton w-3/4 h-3 rounded opacity-40"></div>
+    </div>
+  </div>
+</div>
+<section class="bg-[#2B1F14] py-20 px-6 md:px-20 real-content">
+<div class="max-w-7xl mx-auto text-center mb-16">
+<span class="section-label" style="color: #C47B2B;">What We Stand For</span>
+<h2 class="text-4xl font-playfair text-[#faf3e0]">Our Pillars</h2>
+<div class="section-underline"></div>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="cafe-card p-9 group">
+<div class="w-14 h-14 bg-primary/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+</div>
+<h3 class="text-[#faf3e0] text-xl font-playfair mb-3">Made Fresh Daily</h3>
+<p class="text-[#d9c9a8] font-body text-sm leading-relaxed">Every dish prepared fresh daily using local ingredients, ensuring the highest quality in every bite you take.</p>
+</div>
+<!-- Card 2 -->
+<div class="cafe-card p-9 group">
+<div class="w-14 h-14 bg-primary/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+</div>
+<h3 class="text-[#faf3e0] text-xl font-playfair mb-3">Community First</h3>
+<p class="text-[#d9c9a8] font-body text-sm leading-relaxed">Cafe Made In 2020 exists because of our amazing community. We strive to be the heart of our neighborhood.</p>
+</div>
+<!-- Card 3 -->
+<div class="cafe-card p-9 group">
+<div class="w-14 h-14 bg-primary/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">coffee_maker</span>
+</div>
+<h3 class="text-[#faf3e0] text-xl font-playfair mb-3">Coffee Crafted With Care</h3>
+<p class="text-[#d9c9a8] font-body text-sm leading-relaxed">Our baristas don't just make coffee, they craft experiences through precision roasting and artistic brewing.</p>
+</div>
+</div>
+</section>
+<!-- SECTION 4: PHOTO COLLAGE -->
+<div class="skeleton-wrapper bg-[#FAF3E0] py-20 px-10">
+  <div class="skeleton w-28 h-3 rounded mb-3"></div>
+  <div class="skeleton w-36 h-8 rounded mb-10"></div>
+  <div class="grid grid-cols-3 gap-3">
+    <div class="skeleton skeleton-image h-[280px] rounded-xl col-span-2"></div>
+    <div class="skeleton skeleton-image h-[280px] rounded-xl"></div>
+    <div class="skeleton skeleton-image h-[220px] rounded-xl"></div>
+    <div class="skeleton skeleton-image h-[220px] rounded-xl"></div>
+    <div class="skeleton skeleton-image h-[220px] rounded-xl"></div>
+  </div>
+</div>
+<section class="py-20 px-6 md:px-20 max-w-7xl mx-auto real-content">
+<div class="mb-12">
+<span class="section-label">The Ambience</span>
+<h2 class="text-4xl font-playfair text-[#1E1E1E]">A Peek Inside</h2>
+<div class="section-underline" style="margin: 12px 0 0;"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 h-[280px] bg-cafe-border rounded-lg overflow-hidden group">
+<img alt="Spacious cafe interior with natural lighting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Spacious cafe interior with natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBztbu6QrgzJetK3_w8vzb74Z6VEM1G3A3w5bcqtIrdhdCXzaGhK8uJp2SvPseESh2SE1Zfztq-8465aljQVB_Sx9Uhed51CsFXcYz0OpjeHGQdqMbwIoGhxMZuVPHlrowgLymTJca2Ym2i810zwUwjE_9amnkltJmFigi_vOkohzZqeNsh8a7qJLguxrNQafYHy3J528y2vjBVPcZjK45TGcYdZzT6jdeldMHWUZ3zruFZVZ03Q3-9o6G8L-An9bZmEZi8ff0Wq9L1"/>
+</div>
+<div class="h-[280px] bg-cafe-border rounded-lg overflow-hidden group">
+<img alt="Close up of a freshly brewed cup of espresso" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a freshly brewed cup of espresso" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr-h3MauaaFmo3OjYWLOG-37HIcm367GOXe9wvboGygfV1T-ZXkiv_l79GGH9N80VhyrsxgF2vKw41rjC29XvtWesGHPeR4glotCVCvw9uGG5gPtF6FCCClZUuLMrjyqpxfPBfek79KaZxpt8yG9M4Lz1j3Pg8UX4QTUTIwiB63vlwahH4i3Zirn2HQP_zhvqFo7l0Q6LF3iE9hPdZau-YMYZLuhaQBl2KWmy6rc0bSdEr7fP0CDCGKD6En5tv2yDpMBy7OtXzXvY7"/>
+</div>
+<div class="h-[220px] bg-cafe-border rounded-lg overflow-hidden group">
+<img alt="Outdoor seating area of a modern cafe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Outdoor seating area of a modern cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeCzd884NjWwpk6JTHkEpZD7af9I9C6yhpr5t-fi41kGrr50Go36duL0zjsbWpipn87EjMk3TvGQVsr2Jx2NEE_DqKpikMqCIXO0x9C3pwR7QHRuymP7p9ayHynJ413LYZahX8Pdl6Qa1l19JGZy-QpUtC065wgxc-NFoIsvELI8Tn3vOlnHSlJOpfkgv3IrHwJ_lRhDt_su2KdKItnu4QW6siJAQVbKqWBINVjRetSRJQSH1tMY8LIJv55st2f8TjS3Z7PgTN9acD"/>
+</div>
+<div class="h-[220px] bg-cafe-border rounded-lg overflow-hidden group">
+<img alt="Cafe menu on a wooden board" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cafe menu on a wooden board" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1u7AWu-0FzJbDJbDuem6beFE0861QnEvEZvOzkB1s9czxw6aAR7YGmjrRk9F-CtmAUdIs0tLHKO9y6o2LsSXU0D_DvG3gnC37Fi3uEqgdhChVE7dcKqzAvk361uMwvjKzMeO_IlF9lB2ih8e4spqr96c0H_BLasGH1ztD-PHbPWLLBpwRKrFTsOzG6jM1oIT3k_Nt-WpUPtkqgRowIqcMiuvIRCo6Vf1MxlXycdVirzkTQSbq2t6SqxBLCRPwkMwqGEnsVmSgVS44"/>
+</div>
+<div class="h-[220px] bg-cafe-border rounded-lg overflow-hidden group">
+<img alt="Pastries and cakes displayed on a counter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pastries and cakes displayed on a counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaPSq1MYVBDfaEjHpP61OSCpgyreYHK08KIPX1MdPzjuZ5A5bEHf5eCuABte-hF-EyBtQw0HcJg6sgxTc7BoEBz_KYysCnKWEsW1ove5U8hiclkv1OsLM58_esih_06y7O67XYpsamBxBlmD6m5rwyYMBXnRrGnMceLNIJh79E_CztylkdFhONtJhiTZC5wPT9s4b4IrLDjD3c2WIjuvWVBX2KMFFPWEfPK_OzrjZSJWuQAsqJ5tZWdWA4iFuGhqzMQhlqPCtXTmFg"/>
+</div>
+</div>
+</section>
+<!-- SECTION 5: RATINGS PROOF STRIP -->
+<section class="bg-primary py-12 px-6 md:px-20 overflow-x-auto">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-around gap-12 text-center whitespace-nowrap">
+<div class="flex flex-col items-center gap-2">
+<div class="flex text-[#faf3e0] text-xs">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star_half</span>
+</div>
+<h3 class="text-[#faf3e0] text-3xl md:text-[48px] font-playfair font-bold">4.7 Google Reviews</h3>
+</div>
+<div class="hidden md:block w-px h-16 bg-[#faf3e0]/30"></div>
+<div class="flex flex-col items-center gap-2">
+<div class="flex text-[#faf3e0] text-xs">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<h3 class="text-[#faf3e0] text-3xl md:text-[48px] font-playfair font-bold">4.3 Zomato</h3>
+</div>
+<div class="hidden md:block w-px h-16 bg-[#faf3e0]/30"></div>
+<div class="flex flex-col items-center gap-2">
+<div class="flex text-[#faf3e0] text-xs">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star_half</span>
+</div>
+<h3 class="text-[#faf3e0] text-3xl md:text-[48px] font-playfair font-bold">4.6 Justdial</h3>
+</div>
+</div>
+</section>
+<!-- SECTION 6: BOTTOM CTA -->
+<section class="bg-[#2B1F14] py-20 px-6 md:px-20 text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="text-4xl font-playfair text-[#faf3e0] mb-4">We'd love to see you here.</h2>
+<p class="text-[#d9c9a8] font-body text-base mb-10">Whether it's for a quick morning caffeine fix or a relaxed weekend brunch, our doors are always open.</p>
+<a class="btn-primary flex items-center gap-3 mx-auto shadow-xl" href="https://maps.google.com/maps?q=Cafe+Made+In+2020+Ambernath" target="_blank">
+<span class="material-symbols-outlined">near_me</span>
+                Get Directions
+            </a>
+</div>
+</section>
+<!-- SECTION 7: FOOTER -->
+
+<footer class="bg-[#0F0A05] pt-20 pb-10 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 pb-16">
+<div>
+<h3 class="text-[#C47B2B] font-playfair text-2xl font-bold mb-6">Cafe Made In 2020</h3>
+<p class="text-[#6B5B45] leading-relaxed mb-6">
+    A culmination of passion and culinary craft, serving Ambernath since 2020. Experience local hospitality with global flavors.
+</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-[#6B5B45] flex items-center justify-center text-[#6B5B45] hover:text-[#C47B2B] hover:border-[#C47B2B] transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white text-lg font-bold mb-6 font-playfair">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="menu.html">Our Menu</a></li>
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="contact.html">Order Online</a></li>
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="contact.html">Reserve a Table</a></li>
+<li><a class="text-[#6B5B45] hover:text-[#C47B2B] transition-colors" href="about.html">Gallery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white text-lg font-bold mb-6 font-playfair">Visit Us</h4>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#C47B2B] mt-1">location_on</span>
+<p class="text-[#6B5B45]">Shop No. 1, First Floor, Uma Nivas, Plot No. 554, Kher Section, Ambernath, Maharashtra 421501</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#C47B2B]">schedule</span>
+<p class="text-[#6B5B45]">Open 24 Hours · Every Day</p>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-white/5 pt-10 mt-10 text-center">
+<p class="text-[#6B5B45] text-sm">© 2024 Cafe Made In 2020. All rights reserved. Designed for excellence.</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body></html>
