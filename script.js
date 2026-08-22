@@ -1,14 +1,10 @@
 /* ===== SKELETON LOADER ===== */
 window.addEventListener('load', function() {
-  setTimeout(function() {
-    document.body.classList.add('loaded');
-  }, 800);
+  document.body.classList.add('loaded');
 });
 
 if (document.readyState === 'complete') {
-  setTimeout(function() {
-    document.body.classList.add('loaded');
-  }, 800);
+  document.body.classList.add('loaded');
 }
 
 /* ===== NAVBAR & HAMBURGER ===== */
